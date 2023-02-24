@@ -99,16 +99,16 @@ header {
     gap: 0.5rem;
   }
   
-  .nav-item:hover {
+  /* .nav-item:hover {
     color: var(--clr-primario-700);
     transition: all 0.5s ease-out;
-  }
+  } */
   
   .border-bot {
     padding: .5em;
   }
   
-  .nav-item::after {
+  /* .nav-item::after {
     content: "";
     position: absolute;
     left: 0;
@@ -118,7 +118,7 @@ header {
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
-  }
+  } */
   
 /* Main container */
   
@@ -195,32 +195,38 @@ header {
     .nav-bar {
       height: 0;
       position: absolute;
-      top: 86px;
+      top: 103px;
       left: 0;
       right: 0;
-      background-color: #f8f8f8;
+      background-color:var(--bg-secondary);
       transition: 0.5s;
       overflow: hidden;
     }
   
     .nav-bar.active {
-      min-height: calc(100vh - 86px);
+      min-height: calc(100vh - -60px);
     }
   
     .nav-bar ul {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       text-align: center;
       padding: 0;
       margin: 0;
       width: 100%;
-      height: 100%;
+      height: 90vh;
+      color: var(--bc-primary);
     }
   
     .nav-bar.active ul {
       opacity: 1;
+    }
+
+    .border-bot {
+        font-size: var(--fs-400);
+        color: var(--bc-primary);
     }
 
     .header-flex {
@@ -244,4 +250,49 @@ header {
         gap: 0;
         font-weight: var(--fw-primary);
     }
+
+    .styled__par {
+        margin: 1em 0 1em 0;
+    }
+
+    .ul>li {
+        padding-left: 0;
+    }
   }
+
+
+/* ABOUT ME PAGE */
+
+.about-title {
+    text-transform: uppercase;
+    
+}
+
+.home__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 5em 0 5em 0;
+    letter-spacing: .1em;
+    font-size: var(--fs-200);
+  }
+
+  .cv-btn {
+    width: 30%;
+    text-align: center;
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    .home__about {
+        padding: 0;
+    }
+  }
+
+
+/* SERVICES SECTION */
+
+.services {
+    padding-top: 2.5em;
+}
