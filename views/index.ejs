@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/be727bc14f.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"/>
+    <title>Bruno Corrao's Portfolio.</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header and Nav-bar -->
+        <header>
+            <div class="header-flex">
+                <div class="logo">
+                    <a href="#">
+                     <!-- <img src="" alt="Logo"> El logo podría ser un imagen clickeable, pero por ahora lo soluciono con text plano-->BC
+                    </a>
+                    </div>
+                    <!-- Logo ends -->
+                    <!-- Hamburger menu starts -->
+                    <button class="hamburger">
+                      <div class="line"></div>
+                      <div class="line short-line"></div>
+                      <div class="line"></div>
+                      <div class="line short-line"></div>
+                    </button>
+                    <!-- Hamburger menu ends -->
+                    <!-- navigation starts -->
+                    <nav class="nav-bar">
+                      <ul class="nav-menu">
+                        <li>
+                          <a href="/" class="nav-item active"
+                            ><i class="fa-solid fa-house"></i><span class="border-bot">Home</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/aboutme" class="nav-item"
+                            ><i class="fa-solid fa-user"></i><span class="border-bot">About me</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/whatido" class="nav-item"
+                            ><i class="fa-solid fa-code"></i><span class="border-bot">What I do</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/projects" class="nav-item"
+                            ><i class="fa-solid fa-briefcase"></i><span class="border-bot">Recent projects</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="#contact" class="nav-item"
+                            ><i class="fa-solid fa-envelope"></i><span class="border-bot">Get in touch</span></a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- navigation end -->
+                  </div>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <div class="home__container">
+                    <h1 class="home-title">Hi👋! I'm <span class='styled-words'>Bruno Corrao</span>.
+                        <br>
+                    Fullstack software developer.
+                    </h1>
+                    <p class="styled__par">Changing the world <span class="styled-words">1 line of code</span> at a time.</p>
+                    <a href="/aboutme" class="btn">About me</a>
+                </div>
+                <div class="home__profile__photo">
+                    <img src="img/profilepic.png" alt="Profile picture" class="profile__photo">
+                </div>
+            </section>
+        </main>
+    </div>
+    </main> 
+    <script src="https://kit.fontawesome.com/be727bc14f.js" crossorigin="anonymous"></script>
+</body>
+</html>
