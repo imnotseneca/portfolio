@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/be727bc14f.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;600;700&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet"/>
+    <title>Bruno Corrao's Portfolio.</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header and Nav-bar -->
+        <header>
+            <div class="header-flex">
+                <div class="logo">
+                    <a href="#">
+                     <!-- <img src="" alt="Logo"> El logo podría ser un imagen clickeable, pero por ahora lo soluciono con text plano-->BC
+                    </a>
+                    </div>
+                    <!-- Logo ends -->
+                    <!-- Hamburger menu starts -->
+                    <button class="hamburger">
+                      <div class="line"></div>
+                      <div class="line short-line"></div>
+                      <div class="line"></div>
+                      <div class="line short-line"></div>
+                    </button>
+                    <!-- Hamburger menu ends -->
+                    <!-- navigation starts -->
+                    <nav class="nav-bar">
+                      <ul class="nav-menu">
+                        <li>
+                          <a href="/" class="nav-item active"
+                            ><i class="fa-solid fa-house"></i><span class="border-bot">Home</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/aboutme" class="nav-item"
+                            ><i class="fa-solid fa-user"></i><span class="border-bot">About me</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/aboutme#services" class="nav-item"
+                            ><i class="fa-solid fa-code"></i><span class="border-bot">What I do</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/aboutme#projects" class="nav-item"
+                            ><i class="fa-solid fa-briefcase"></i><span class="border-bot">Latest projects</span></a
+                          >
+                        </li>
+                        <li>
+                          <a href="/contact" class="nav-item"
+                            ><i class="fa-solid fa-envelope"></i><span class="border-bot">Get in touch</span></a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- navigation end -->
+                  </div>
+        </header>
+                <main>  
+                  <section class="home__contact" id="contact">
+                    <div class="home__container">
+                        <h1 class="about-title">How to reach me</span>
+                        </h1>
+                        <p>
+                            You can always reach me with <span class="styled-words">respect</span>. You can do it by speaking <span class="styled-words">english or spanish</span>.
+                            <br>
+                            Remember to be friendly if you want a sincere response from me.
+                            <br>
+                            I highly value my time cause I invest it on <span class="styled-words">create and shape things</span> so please be <span class="styled-words">patient</span>.
+                            <br>                            
+                        </p>
+                    </div>
+                </section>
+            </main>
+            <section class="contact__form">
+              <h1>Contact Form</h1>
+              <p>Please fill out this form with the required information</p>
+              <form method="post" class="contact-form">
+                <fieldset>
+                  <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+                </fieldset>
+                <fieldset>
+                  <label for="subject">Enter a subject:</label>
+                  <input type="text" name="" id="subject" placeholder="Enter subject">
+                  <label for="bio">Enter you message:
+                    <textarea id="bio" name="bio" rows="3" cols="50" placeholder="I like coding on the beach..."></textarea>
+                  </label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+              </form>
+            </section>
+            <footer class="footer">
+              <div class="social__media service-icons">
+                <a href="https://www.linkedin.com/in/bruno-corrao/" target="_blank" rel="noreferrer" title="LinkedIn" aria-label="LinkedIn" class="social__media__link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/imnotseneca" target="_blank" rel="noreferrer" title="Github" aria-label="GitHub" class="social__media__link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/plasticfaceyoda" target="_blank" rel="noreferrer" title="Twitter" aria-label="Twitter" class="social__media__link"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <p class="copy__right">
+                '2023' © All rights reserved
+              </p>
+            </footer>
+        </div>
+        <script src="js/main.js"></script> 
+        <script src="https://kit.fontawesome.com/be727bc14f.js" crossorigin="anonymous"></script>
+    </body>
+    </html>
+    
