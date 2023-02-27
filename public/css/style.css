@@ -6,12 +6,13 @@
     --fc-terceary: #ce4257;
     --bc-primary: #212121;
     --ff-primary: 'Poppins', sans-serif;
-    --fs-icons-nav: 1.3rem;
-    --fs-icons: 1.5rem;
-    --fs-xl: 1.85rem;
-    --fs-400: 1.375rem;
-    --fs-200: 1rem;
-    --fs-100: 0.9rem;
+    --ff-secondary: 'Titillium Web', 'Poppins', sans-serif;
+    --fs-icons-nav: 1.4rem;
+    --fs-icons: 1.6rem;
+    --fs-xl: 1.95rem;
+    --fs-400: 1.4rem;
+    --fs-200: 1.15rem;
+    --fs-100: 1rem;
     --fs-50: 0.725rem;
     --fw-primary: 700;
     --fw-secondary: 400;
@@ -19,11 +20,11 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: var(--ff-secondary) !important;
 }
 
 * {
     font-weight: var(--fw-secondary);
-    font-family: var(--ff-primary);
     font-size: var(--fw-secondary);
     line-height: 1.65;
     color: var(--fc-primary);
@@ -62,7 +63,6 @@ body {
 header {
     width: 100%;
     background-color: transparent;
-
   }
   
   .header-flex {
@@ -297,6 +297,7 @@ header {
 .project-section {
     padding-top: 5em;
     letter-spacing: .1em;
+    
 }
 
 .project-section h2 {
@@ -311,7 +312,7 @@ header {
 .project-section-container {
     display: flex;
     margin-top: 3em;
-    justify-content: center;
+    justify-content: space-between;
     gap: 3em;
     width: 100%;
     height: 100%;
@@ -346,7 +347,7 @@ header {
 }
 
 .project-section-left  {
-    padding-right: 2.8em;
+    padding-right: 9.8em;
     border-right: 2px solid var(--bg-secondary);
     padding-bottom: 3.5rem;
 }
@@ -371,7 +372,7 @@ header {
 
 
 .project-section-right {
-    padding-right: 2.8em;
+    /* padding-right: 2.8em; */
     padding-bottom: 3.5rem;
 
 }
@@ -437,4 +438,168 @@ header {
     .project-section-right-image img:active {
       transform: scale(1.05);
     }
+}
+
+/* Services Section */
+
+.service-section {
+  padding-top: 2.5em;
+}
+
+.service-section-container {
+  display: flex;
+  margin-top: 4em;
+}
+
+.service-section-container-left {
+  padding-right: 1rem;
+}
+
+.service-section-left, .service-section-right {
+  display: flex;
+  line-height: 1.5em;
+}
+
+.service-icons {
+  padding-right: 1.5rem;
+  font-size: var(--fs-icons);
+}
+
+.service-section h2 {
+  display: inline-block;
+  color: var(--fc-primary);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-primary);
+  border-bottom: 0.188rem solid var(--fc-terceary);
+  padding-bottom: 0.5em;
+}
+
+.service-h4 {
+  padding-bottom: 0.8rem;
+  color: var(--fc-primary);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-primary);
+}
+
+.service-p {
+  padding-bottom: 3.5rem;
+  font-size: var(--fs-200);
+}
+
+.special-one {
+  padding-right: 0.5em;
+}
+
+/* Responsive services section */
+
+@media only screen and (max-width: 900px) {
+  .service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-section-container {
+    flex-direction: column;
+  }
+
+
+}
+
+/* Contact section */
+
+.home__contact {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 5em 0 5em 0;
+    letter-spacing: .1em;
+    font-size: var(--fs-200);
+
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  width: 100%;
+  background-color: var(--bg-primary);;
+  border: none;
+  border-bottom: 1px solid #0a0a23;
+  color: var(--fc-primary);
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: var(--bg-primary);
+  border-color: white;
+  min-width: 300px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  max-width: 1500px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 1rem;
 }
