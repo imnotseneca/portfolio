@@ -7,7 +7,6 @@ module.exports = {
         res.render('contact.ejs')
     },
     getFormData: (req,res) => {
-        console.log(req.body)
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
@@ -24,10 +23,8 @@ module.exports = {
 
         transporter.sendMail(mailOption, (error,info) => {
             if(error) {
-                console.log(error)
                 res.send('error')
             } else {
-                console.log(`Email sent: ${info.response}`)
                 res.send('success')
             }
         })
