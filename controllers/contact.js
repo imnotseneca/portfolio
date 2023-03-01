@@ -25,7 +25,7 @@ module.exports = {
             if(error) {
                 res.send('error')
             } else {
-                res.send('success')
+            res.send(success)
             }
         })
     },
