@@ -288,8 +288,8 @@ header {
 
 /* SERVICES SECTION */
 
-.services {
-    padding-top: 2.5em;
+#services {
+    padding-top: 8.5em;
 }
 
 /* PROJECTS SECTION */
@@ -603,4 +603,14 @@ input[type="file"] {
   justify-content: center;
   padding: 2rem 0;
   gap: 1rem;
+}
+
+[data-aos] {
+  pointer-events: none;
+}
+.aos-animate {
+  pointer-events: auto;
+}
+.aos-init[data-aos][data-aos].aos-animate {
+  transform: unset;
 }
